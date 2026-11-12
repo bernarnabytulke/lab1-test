@@ -1,0 +1,10 @@
+name: lab1
+description: Лабораторна робота 1. Функції та обробка колекцій у Dart.
+version: 1.0.0
+publish_to: none
+
+environment:
+  sdk: ^3.9.0
+
+dev_dependencies:
+  lints: ^6.0.0
