@@ -66,4 +66,5 @@ dart analyze
 
 ## Вивід `dart analyze`
 
-(вставте сюди результат після запуску на своєму комп’ютері)
+Analyzing lab1-test...
+No issues found!
