@@ -1,0 +1,13 @@
+name: analyze
+
+on: [push, workflow_dispatch]
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dart-lang/setup-dart@v1
+      - run: dart pub get
+      - run: dart analyze
+      - run: dart run bin/lab1.dart
