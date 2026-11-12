@@ -169,7 +169,7 @@ bool Function(Reading) consumptionAbove(double threshold) =>
 /// Маскує останні чотири цифри номера лічильника (іменовані групи).
 String maskMeter(String meter) => meter.replaceAllMapped(
       _maskPattern,
-      (m) => '${m.namedGroup('head')}****',
+      (m) => '${(m as RegExpMatch).namedGroup('head')}****',
     );
 
 void main() {
